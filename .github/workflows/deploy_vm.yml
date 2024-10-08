@@ -31,9 +31,8 @@ uses: actions/checkout@v4
 -name: Login to Azure using credentials
 
 uses:azure/login@v1.5.0
-
-with:
-creds: ${{ secrets.AZURE_CREDENTIALS }}
+ 
+ creds: ${{ secrets.AZURE_CREDENTIALS }}
 
 # Step 3: Create the resource group if it doesn't exist
 
