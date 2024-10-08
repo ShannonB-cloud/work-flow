@@ -27,13 +27,9 @@ uses: actions/checkout@v4
 
 
 # Step 2: Login to Azure using credentials stored in GitHub Secrets
-
 - name: Login to Azure using credentials
-
 uses: azure/login@v1.5.0
-
 with:
-
 creds: ${{ secrets.AZURE_CREDENTIALS }}
 
 
